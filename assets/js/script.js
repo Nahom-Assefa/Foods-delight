@@ -87,3 +87,13 @@ for (let i = 0; i < list.length; i++) {
     ingredientLists.innerText= list[i]
 }
 
+let sources = document.createElement("p")
+sources.innerText = "Source: " + data.hits[3].recipe.source
+resultContainer.appendChild(sources)
+var aTag = document.createElement('a')
+aTag.setAttribute('href', data.hits[3].recipe.url)
+aTag.innerHTML = data.hits[3].recipe.url
+resultContainer.appendChild(aTag)
+}
+
+
