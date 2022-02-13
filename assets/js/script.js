@@ -96,4 +96,13 @@ aTag.innerHTML = data.hits[3].recipe.url
 resultContainer.appendChild(aTag)
 }
 
+function searchedImages(data2){
+    firstImage = data2.results[0].urls.small
+    imageOne.innerHTML=("<img src='" + firstImage  + "'>")
+    secondImage = data2.results[1].urls.small
+    
+    imageTwo.innerHTML=("<img src='" + secondImage  + "'>")
+    
+    }
+    searchButton.addEventListener("click",searchRecipe )
 
