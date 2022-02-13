@@ -68,3 +68,22 @@ var aTag = document.createElement('a')
 aTag.setAttribute('href', data.hits[0].recipe.url)
 aTag.innerHTML = data.hits[0].recipe.url
 resultContainer.appendChild(aTag)
+
+let titleTwo = document.createElement("h4")
+titleTwo.innerText = data.hits[3].recipe.label
+titleTwo.setAttribute("class" ,"title")
+resultContainer.appendChild(titleTwo)
+
+let  ingredientLine = document.createElement("ul")
+
+resultContainer.appendChild(ingredientLine)
+
+let list = data.hits[3].recipe.ingredientLines
+for (let i = 0; i < list.length; i++) {
+    let ingredientLists = document.createElement("li")
+    ingredientLists.setAttribute("class" ,"ingredientList")
+
+    ingredientLine.appendChild(ingredientLists)
+    ingredientLists.innerText= list[i]
+}
+
