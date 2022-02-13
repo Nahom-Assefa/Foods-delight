@@ -40,3 +40,31 @@ function searchRecipe() {
       searchedImages(data2);
     });
 }
+
+function searchedResult(data){
+    resultContainer.innerHTML=""
+let title = document.createElement("h4")
+title.innerText = data.hits[0].recipe.label
+title.setAttribute("class" ,"title")
+resultContainer.appendChild(title)
+
+let ingredientLines = document.createElement("ul")
+
+resultContainer.appendChild(ingredientLines)
+
+let lists = data.hits[0].recipe.ingredientLines
+for (let i = 0; i < lists.length; i++) {
+    let ingredientList = document.createElement("li")
+    ingredientList.setAttribute("class" ,"ingredientList")
+
+    ingredientLines.appendChild(ingredientList)
+    ingredientList.innerText= lists[i]
+}
+
+let source = document.createElement("p")
+source.innerText = "Source: " + data.hits[0].recipe.source
+resultContainer.appendChild(source)
+var aTag = document.createElement('a')
+aTag.setAttribute('href', data.hits[0].recipe.url)
+aTag.innerHTML = data.hits[0].recipe.url
+resultContainer.appendChild(aTag)
