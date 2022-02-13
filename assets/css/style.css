@@ -21,3 +21,30 @@ section{
     /* border: 1px solid red; */
 
 }
+h2{
+    text-align: center;
+}
+
+.input{
+    width: 50%;
+}
+.title{
+    font-weight: bolder;
+    text-align: center;
+}
+.ingredientList{
+    font-size: 26px;
+}
+.img{
+    background-position: center;
+    /* padding: 0 10px 0 10px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-image: url(https://g.foolcdn.com/editorial/images/660924/restaurant-gettyimages-643847438.jpg);
+}
+img{
+    height: 100%;
+    width: auto;
+}
+
