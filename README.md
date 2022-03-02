@@ -1,13 +1,13 @@
 # Foods-delight
 A project inspired by those who love to cook. This web application performs a fetch to edamam a recipe database and unisplash for image API. 
 
-![Foods Delight Screenshot](/public/assets/images/sc-main.png)
+![Foods Delight Screenshot](assets/img/foodsDelight-SC.png)
 
 ## Table of Contents
 
 - [Usage](#usage)
 - [License](#license)
-- [Contributions](#contributions)
+- [Challenges](#challenges)
 - [Technologies](#technologies)
 - [Credits](#credits)
 - [Questions](#questions)
@@ -24,7 +24,7 @@ This project is licensed under the MIT license.
 
 ![MIT Badge](https://img.shields.io/npm/l/f)
 
-## Significant Challenges
+## Challenges
 
 Getting the API's to dynamically alter the DOM, and work well with each other.
 
